@@ -1,0 +1,28 @@
+{
+    
+    "name": "SKETCH-DOODLE",
+    "version": "0.1",
+    "manifest_version": 3,
+    "action":{
+        "default_icon":"sketch.png"
+    },
+    "icons": {
+        "16": "sketch.png",
+        "48": "sketch.png",
+        "128": "sketch.png"
+    },
+    
+    "description": "A extenstion that lets you doodle on any webpage of your choice.Developed by Kajal Srivastava ",
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "p5.js",
+                "p5.dom.min.js",
+                "sketch.js"
+            ]
+        }
+    ]
+}
